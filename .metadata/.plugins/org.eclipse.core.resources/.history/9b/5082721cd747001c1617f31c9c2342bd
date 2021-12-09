@@ -1,0 +1,5 @@
+package com.odontolink.response;
+
+public class CitasResponse {
+
+}

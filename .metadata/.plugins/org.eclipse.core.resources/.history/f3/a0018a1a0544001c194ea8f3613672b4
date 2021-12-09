@@ -1,0 +1,5 @@
+package com.odontolink.model;
+
+public class TurnoData {
+
+}

@@ -1,0 +1,5 @@
+package com.odontolink.request;
+
+public class CitaRequest {
+
+}

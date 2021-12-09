@@ -1,0 +1,33 @@
+package com.odontolink.model;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Turno {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+
+	@Column
+	private Integer idPaciente;
+
+	@Column
+	private Integer idMedico;
+
+	@Column
+	private String anio;
+
+	@Column
+	private String mes;
+
+	@Column
+	private String dia;
+
+	@Column
+	private String fechaHoraInicio;
+
+	@Column
+	private String fechaHoraFin;
+}

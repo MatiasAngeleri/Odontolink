@@ -1,0 +1,5 @@
+1636754433600	Rename type 'TurnosUtils'
+1636754703576	Delete element
+1636754925259	Rename compilation unit 'TurnoData.java'
+1636758221318	Encapsulate field 'turnos'
+1636759715878	Encapsulate field 'fechasYhorasInicio'

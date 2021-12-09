@@ -1,0 +1,37 @@
+package com.odontolink.utils;
+
+import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.ZoneId;
+import java.util.ArrayList;
+
+import com.odontolink.model.Turno;
+
+public class TurnoUtils {
+
+	public static ArrayList<Turno> calcularTurnos() {
+		int dias = 60;
+		LocalDate hoy = LocalDate.now();		
+		hoy.getMonth();
+		hoy.getDayOfMonth();
+		hoy.getYear();
+		LocalTime ahora =   LocalTime.now();  
+		LocalDateTime ldt = LocalDateTime.of(hoy, ahora);
+		ZoneId zone = ZoneId.of("America/Argentina/Buenos_Aires"); 
+		Duration d = Duration.ofMinutes(20);
+		Instant start = ldt.atZone(zone).toInstant();
+		Instant stop = start.plus(d);
+		for (int dia = 0; dia < dias; dia++) {
+			Turno turno = new Turno();
+			Period periodo = Period.ofDays(dia);
+			turno.setMes(periodo.getMonths());
+			
+		}
+		
+		return stop;
+	}
+}

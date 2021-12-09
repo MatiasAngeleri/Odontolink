@@ -1,0 +1,8 @@
+package com.odontolink.model;
+
+public class Snippet {
+	public static void main(String[] args) {
+		Turno
+	}
+}
+
